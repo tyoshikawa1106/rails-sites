@@ -1,0 +1,46 @@
+<div id="pageBody">
+  <div id="pageBodyMain">
+    <article class="articleDetail">
+      <header class="articleDetailHead">
+        <div class="pageTitle">
+          <h1>はじめてのSaasy</h1>
+        </div>
+        <div>
+          <img src="<%= asset_path "photo/Saasy.jpg" %>" alt="" width="720" height="390"/>
+        </div>
+        <div class="articleListText">
+          <h1>はじめてのSaasy</h1>
+          <p>
+            Cloudforce2012ではじめてSaasyにあえました。
+            <br/>
+            写真も撮れてよかったです。
+          </p>
+        </div>
+      </header>
+      <section class="articleDetailBody">
+        <section>
+          <div class="heading-typeB">
+            <h3>Saasy</h3>
+          </div>
+          <div>
+            <img src="<%= asset_path "photo/Saasy.jpg" %>" alt="" width="720" height="390"/>
+            <figcaption>Saasyです。前は赤色、後ろは青色になっています。</figcaption>
+          </div>
+        </section>
+        <section>
+          <div class="heading-typeB">
+            <h3>Chatty</h3>
+          </div>
+          <div>
+            <img src="<%= asset_path "photo/Chatty.jpg" %>" alt="" width="720" height="390"/>
+            <figcaption>Chattyです。残念ながら撮影に失敗しました。</figcaption>
+          </div>
+        </section>
+      </section>
+    </article>
+  </div>
+  <div id="pageBodySub">
+    <%= render 'layouts/portfolioLink' %>
+    <%= render 'layouts/newsList' %>
+  </div>
+</div>

@@ -1,2 +1,46 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<div id="pageBody">
+  <div id="pageBodyMain">
+    <article class="articleDetail">
+      <div class="pageTitle">
+        <h1>おといあわせ</h1>
+      </div>
+      <p>サンプルを元につくったおといあわせページです。</p>
+      <div class="btnLink">
+        <a href="https://plus.google.com/u/0/+TaikiYoshikawa/posts" target="_blank">
+          おといあわせフォーム
+        </a>
+      </div>
+      <p>ブログとかTwitterのリンクです。</p>
+      <section>
+        <table>
+          <caption>
+            <h2 class="heading-typeB">Taiki Yoshikawa</h2>
+          </caption>
+          <tr>
+            <th>
+              ブログ
+            </th>
+            <td>
+              <a herf="http://tyoshikawa1106.hatenablog.com/" target="_blank">
+                http://tyoshikawa1106.hatenablog.com/
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Twitter
+            </th>
+            <td>
+              <a href="https:twitter.com/tyoshikawa1106" target="_blank">
+                @tyoshikawa1106
+              </a>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </article>
+  </div>
+  <div id="pageBodySub">
+    <%= render 'layouts/newsList' %>      
+  </div>
+</div>

@@ -1,2 +1,83 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div id="pageBody">
+  <section class="mainVisual">
+    <ul class="bxslider">
+      <li>
+        <div class="mainVisualText">
+          <h1>はじめてのSaasy</h1>
+          <p>Cloudforce2012ではじめてSaasyにあえました。<br/>写真も撮れてよかったです。</p>
+        </div>
+        <img src="<%= asset_path "photo/Saasy.jpg" %>" alt="" width="980" height="500" />
+      </li>
+      <li>
+        <div class="mainVisualText">
+          <h1>Cloudforce2012</h1>
+          <p>Cloudforce2012の会場の様子です。</p>
+        </div>
+        <img src="<%= asset_path "photo/MeetingPlace.jpg" %>" alt="" width="980" height="500" />
+      </li>
+      <li>
+        <div class="mainVisualText">
+          <h1>Developer Zone</h1>
+          <p>Developer Zoneでは開発者向けのお話が聞けました。</p>
+        </div>
+        <img src="<%= asset_path "photo/DevZone.jpg" %>" alt="" width="980" height="500" />
+      </li>
+    </ul>
+  </section>
+
+  <section class="portfolioIndex">
+    <article>
+      <%= link_to image_tag('photo/Saasy.jpg', { :size => '300x163', :alt => 'Demo3'}), portfolio03_path %>
+      <div>
+        <h2>はじめてのSaasy</h2>
+      </div>
+      <p>
+        Cloudforce2012ではじめてSaasyにあえました。
+        <br/>
+        写真も撮れてよかったです。
+      </p>
+    </article>
+    <article>
+      <%= link_to image_tag('photo/MeetingPlace.jpg', { :size => '300x163', :alt => 'Demo2'}), portfolio02_path %>
+      <h2>Cloudforce2012</h2>
+      <p>Cloudforce2012の会場の様子です。</p>
+    </article>
+    <article>
+      <%= link_to image_tag('photo/DevZone.jpg', { :size => '300x163', :alt => 'Demo1'}), portfolio01_path %>
+      <h2>Developer Zone</h2>
+      <p>Developer Zoneでは開発者向けのお話が聞けました。</p>
+    </article>
+  </section>
+
+  <section class="news">
+    <div class="newsTitle">
+      <h1>おしらせ</h1>
+    </div>
+    <table>
+      <tr>
+        <th>
+          <time datetime="2014-01-01">2014年01月03日</time>
+        </th>
+        <td>
+          HTML/CSSデザインの教科書を読みながらつくったサンプルページを元にForce.comサイトをつくってみました。
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <time datetime="2013-12-29">2013年12月29日</time>
+        </th>
+        <td>
+          HTML/CSSデザインの教科書を読みおわりました。
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <time datetime="2013-12-19">2013年12月19日</time>
+        </th>
+        <td>
+          HTML/CSSデザインの教科書を読みはじめました。
+        </td>
+      </tr>
+    </table>
+  </section>
+</div>

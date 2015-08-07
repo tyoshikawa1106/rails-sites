@@ -1,0 +1,52 @@
+<div id="pageBody">
+  <div id="pageBodyMain">
+    <section>
+      <div class="pageTitle">
+        <h1>つくったもの</h1>
+      </div>
+      <article class="articleList">
+        <a src="#">
+          <div class="articleListText">
+            <h1>はじめてのSaasy</h1>
+            <p>
+              Cloudforce2012ではじめてSaasyにあえました。
+              <br/>
+              写真も撮れてよかったです。
+            </p>
+          </div>
+          <div class="articleListImage">
+            <img src="<%= asset_path "photo/Saasy.jpg" %>" alt="Demo3" width="300" height="163"/>
+          </div>
+        </a>
+      </article>
+      <article class="articleList">
+        <a href="#">
+          <div class="articleListText">
+            <h1>Cloudforce2012</h1>
+            <p>Cloudforce2012の会場の様子です。</p>
+          </div>
+          <div class="articleListImage">
+            <img src="<%= asset_path "photo/MeetingPlace.jpg" %>" alt="Demo2" width="300" height="163"/>
+          </div>
+        </a>
+      </article>
+      <article class="articleList">
+        <a href="#">
+          <div class="articleListText">
+            <h1>Developer Zone</h1>
+            <p>
+              Developer Zoneでは開発者向けのお話が聞けました。
+            </p>
+          </div>
+          <div class="articleListImage">
+            <img src="<%= asset_path "photo/DevZone.jpg" %>" alt="Demo1" width="300" height="163"/>
+          </div>
+        </a>
+      </article>
+    </section>
+  </div>
+  <div id="pageBodySub">
+    <%= render 'layouts/portfolioLink' %>
+    <%= render 'layouts/newsList' %>
+  </div>
+</div>

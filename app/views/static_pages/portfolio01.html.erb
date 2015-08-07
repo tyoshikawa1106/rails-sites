@@ -1,0 +1,42 @@
+<div id="pageBody">
+  <div id="pageBodyMain">
+    <article class="articleDetail">
+      <header class="articleDetailHead">
+        <div class="pageTitle">
+          <h1>Developer Zone</h1>
+        </div>
+        <div>
+          <img src="<%= asset_path "photo/DevZone.jpg" %>" alt="" width="720" height="390"/>
+        </div>
+        <div class="articleListText">
+          <h1>Developer Zone</h1>
+          <p>Developer Zoneでは開発者向けのお話が聞けました。</p>
+        </div>
+      </header>
+      <section class="articleDetailBody">
+        <section>
+          <div class="heading-typeB">
+            <h3>Developer Zoneの様子 1</h3>
+          </div>
+          <div>
+            <img src="<%= asset_path "photo/DevZone1.jpg" %>" alt="" width="720" height="390" />
+            <figcaption>Developer Zoneの様子 1</figcaption>
+          </div>
+        </section>
+        <section>
+          <div class="heading-typeB">
+            <h3>Developer Zoneの様子 2</h3>
+          </div>
+          <div>
+            <img src="<%= asset_path "photo/DevZone2.jpg" %>" alt="" width="720" height="390" />
+            <figcaption>Developer Zoneの様子 2</figcaption>
+          </div>
+        </section>
+      </section>
+    </article>
+  </div>
+  <div id="pageBodySub">
+    <%= render 'layouts/portfolioLink' %>
+    <%= render 'layouts/newsList' %>
+  </div>
+</div>
