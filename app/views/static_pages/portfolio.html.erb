@@ -1,3 +1,4 @@
+<% provide(:title, 'つくったもの') %>
 <div id="pageBody">
   <div id="pageBodyMain">
     <section>
@@ -5,7 +6,7 @@
         <h1>つくったもの</h1>
       </div>
       <article class="articleList">
-        <a src="#">
+        <%= link_to portfolio03_path do %>
           <div class="articleListText">
             <h1>はじめてのSaasy</h1>
             <p>
@@ -17,10 +18,10 @@
           <div class="articleListImage">
             <img src="<%= asset_path "photo/Saasy.jpg" %>" alt="Demo3" width="300" height="163"/>
           </div>
-        </a>
+        <% end %>
       </article>
       <article class="articleList">
-        <a href="#">
+        <%= link_to portfolio02_path do %>
           <div class="articleListText">
             <h1>Cloudforce2012</h1>
             <p>Cloudforce2012の会場の様子です。</p>
@@ -28,10 +29,10 @@
           <div class="articleListImage">
             <img src="<%= asset_path "photo/MeetingPlace.jpg" %>" alt="Demo2" width="300" height="163"/>
           </div>
-        </a>
+        <% end %>
       </article>
       <article class="articleList">
-        <a href="#">
+        <%= link_to portfolio01_path do %>
           <div class="articleListText">
             <h1>Developer Zone</h1>
             <p>
@@ -41,7 +42,7 @@
           <div class="articleListImage">
             <img src="<%= asset_path "photo/DevZone.jpg" %>" alt="Demo1" width="300" height="163"/>
           </div>
-        </a>
+        <% end %> 
       </article>
     </section>
   </div>
